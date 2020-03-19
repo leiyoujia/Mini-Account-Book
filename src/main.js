@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
-import vuetify from './plugins/vuetify';
+import { VTable, VPagination } from 'vue-easytable'
+import 'vue-easytable/libs/themes-base/index.css'
 
 Vue.config.productionTip = false
 
+Vue.component(VTable.name, VTable)
+Vue.component(VPagination.name, VPagination)
+
 new Vue({
-  vuetify,
-  render: h => h(App)
+    render: h => h(App)
 }).$mount('#app')
