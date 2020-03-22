@@ -2,7 +2,7 @@
 <div>
     <div>mini-account</div>
 
-    <button @click='category'>查看数据</button>
+    <a-button @click='category'>查看数据</a-button>
 
     <v-table
         :columns = 'columns'
